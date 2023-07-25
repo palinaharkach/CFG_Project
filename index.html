@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Health Website</title>
+
+    <!---box icons-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!---google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!---header-->
+    <header>
+        <a href="#" class="logo"><i class='bx bxs-home'></i>Health</a>
+
+        <ul class="navlist">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#BMICalculator">BMI Calculator</a></li>
+            <li><a href="#MedicalInfo">Lookup Medical Info</a></li>
+            <li><a href="./allergies.html">Suspected Allergies</a></li>
+        </ul>
+
+
+    </header>
+
+
+    <!---home-->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Take care of <br>your<span> body.</span><br>It's the only place<br> you have to <br> <span>live.</span>
+            </h1>
+            <a href="./allergies.html" class="btn">List Your Allergies <i class='bx bxs-right-arrow'></i></a>
+        </div>
+
+        <div class="home-img">
+            <img src="images/hero.png" alt="">
+
+        </div>
+    </section>
+
+    <!---BMI Calculator-->
+    <section class="about" id="BMICalculator">
+        <div class="about-img">
+            <img src="images/about.png">
+        </div>
+
+        <div class="container">
+            <h2 class="about-text">BMI Calculator</h2>
+
+            <p>Height (in cm)</p>
+
+            <input type="text" id="height" />
+
+            <p>Weight (in kg)</p>
+
+            <input type="text" id="weight" />
+
+            <a class="btn" id="btn">Calculate<i class='bx'></i></a>
+
+            <div>
+                <h1 id="result"></h1>
+            </div>
+        </div>
+    </section>
+
+    
+    <!---Medical Info-->
+    <section id="MedicalInfo">
+        <div>
+            <!-- flu, preeclampsia, osteoporosis, tuberculosis, cancer, diabetes, vaccines, bone+density, weight, checkups, skin, heart, lungs-->
+
+            <label for="medKeyword">
+                <h2 class="middle-text">Lookup Medical Info:</h2>
+            </label>
+            <select id="medKeyword" name="user_job">
+                <optgroup label="Medical Conditions">
+                    <option value="flu">The Flu</option>
+                    <option value="diabetes">Diabetes</option>
+                    <option value="preeclampsia">Preeclampsia</option>
+                    <option value="osteoporosis">Osteoporosis</option>
+                    <option value="tuberculosis">Tuberculosis</option>
+                    <option value="cancer">Cancer</option>
+                </optgroup>
+                <optgroup label="Preventitive">
+                    <option value="checkups">Checkups</option>
+                    <option value="dental">Oral Health</option>
+                    <option value="vaccines">Vaccines</option>
+                    <option value="weight">Weight Control</option>
+                    <option value="bone+density">Bone Density Scans</option>
+                </optgroup>
+                <optgroup label="General">
+                    <option value="skin">Skin</option>
+                    <option value="heart">Heart</option>
+                    <option value="lungs">Lungs</option>
+                </optgroup>
+            </select>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
