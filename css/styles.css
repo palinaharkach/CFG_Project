@@ -1,9 +1,7 @@
 * {
-    padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    list-style: none;
     text-decoration: none;
     scroll-behavior: smooth;
     scroll-padding-top: 3rem;
@@ -57,6 +55,8 @@ header {
 
 .navlist {
     display: flex;
+    padding: 0;
+    list-style: none;
 }
 
 .navlist a {
@@ -114,7 +114,7 @@ section {
     margin-bottom: 3rem;
 }
 
-span {
+.home-text span {
     color: var(--main-color);
 }
 
@@ -170,6 +170,7 @@ header.sticky {
 #MedicalInfo {
     text-align: center;
     font-size: 40px;
+    
 }
 
 
