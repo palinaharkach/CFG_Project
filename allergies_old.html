@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RSVP App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Suspected Allergies</h1>
+      <p>You may list anything that you believe that you might be allergic to here:</p>
+      <form id="allergyRegistrar">
+        <input type="text" name="name" placeholder="Enter an allergen">
+        <button type="submit" name="submit" value="submit">Submit</button>
+      </form>
+    </header>
+		
+    <div class="main">	
+      <h2>Allergens</h2>
+      <ul id="invitedList"></ul>	
+    </div>
+
+    <footer>
+      <p><small>This app was made while following an interactive and video-based tutorial from the &quot;DOM Scripting by Example&quot; module of the Team Tree House's &quot;Intro to Programming&quot; course. This module is taught by Guil Hernandez and Joel Kraft. Minor modifications to instructor written code were done by the student, Nataly Mota, in order to customize this app to change the kinds of things that can be listed with it, so that it is now a list of suspected allergies. Then, student Palina Harkach contributed to modifying the CSS styles in order to make the color scheme fit the new app's medical theme better, as well as to improve the formal feel of the font selection used. These modifications are still under development.</small></p>
+    </footer>
+  </div>
+  <script type="text/javascript" src="js/allergies.js"></script>
+</body>
+</html>

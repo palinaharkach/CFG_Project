@@ -1,3 +1,21 @@
+/* ================================= 
+  Element Styles
+==================================== */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#allergiesListHeader {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: left;
+    justify-content: start;
+    background: none;
+    transition: all .50s ease;
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -25,7 +43,7 @@ body {
     color: var(--text-color);
 }
 
-header {
+#header {
     position: fixed;
     width: 100%;
     top: 0;
@@ -87,43 +105,21 @@ header {
 }
 
 
-.image-track {
-    height: 100vh;
-    width: 100vm;
-    background-color: #91C8E4;
-    margin: 0rem;
-    overflow: hidden;
-}
-
-#image-track {
-    display: flex;
-    gap: 4vmin;
-    position:relative;
-    left: 20%;
-    top: 50%;
-    transform: translate(0%, -50%);
-    user-select: none; 
-}
-
-#image-track > .image {
-    width: 40vmin;
-    height: 56vmin;
-    object-fit: cover;
-    object-position: 100% center;
-}
 
 section {
     padding: 70px 14% 60px;
 }
 
 .home {
-    position: relative;
+    position: absolute;
+    padding-left: 3rem;
     height: 100vh;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 2rem;
+    max-width: 1150px;
+    margin-top: 100px;
+    margin-top: 1rem;
 }
 
 .home-img img {
@@ -131,7 +127,7 @@ section {
     height: auto;
 }
 
-.home-text h1 {
+h1 {
     font-size: var(--big-font);
     font-weight: 700;
     line-height: 1.3;
@@ -167,7 +163,7 @@ section {
 }
 
 
-header.sticky {
+#header.sticky {
     padding: 12px 14%;
     background: var(--other-color);
 }
@@ -200,11 +196,11 @@ header.sticky {
 
 
 @media (max-width: 1545px) {
-    header{
+    #header{
         padding: 22px 4%;
         transition: .2s;
     }
-    header.sticky{
+    #header.sticky{
         padding: 14px 4%;
         transition: .2s;
     }
